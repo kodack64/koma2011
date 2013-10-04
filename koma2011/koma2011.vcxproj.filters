@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{eb0f6e58-6b48-44a4-8f3d-ff01486a344b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{bce3bba9-a3d2-47a5-aed3-997ab36f3c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{e228b85b-9203-4bf7-a39f-1213179e737d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{86d430bc-e62a-4976-b5f4-44e00e4d613b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{f7d918b0-dfbc-4223-847d-d64cb7e2a33b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphicAdapter.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicApi.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicGenerator.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DXImage.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DXAPI.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioAdapter.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioApi.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioGenerator.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAudioApi.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAudioGenerator.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationProperty.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseAdapter.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardAdapter.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MyImage.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGraphicGenerator.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveShell.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Package.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="PackageManager.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="portaudio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="b2Factory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="InputApi.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputAdapter.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="b2Object.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="b2MyContact.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationProperty.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicAdapter.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DXAPI.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DXImage.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioAdapter.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAudio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAudioApi.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAudioGenerator.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardAdapter.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveShell.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseAdapter.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGraphicGenerator.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="PackageManager.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="b2Factory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="InputApi.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="InputAdapter.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

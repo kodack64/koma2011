@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1C5B973-5E30-4776-81DF-C99ECF7F9A99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>koma2011</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Box2D_v2.2.1\Build\Box2D\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\Box2D_v2.2.1\Build\Box2D\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="ApplicationProperty.h" />
+    <ClInclude Include="AudioAdapter.h" />
+    <ClInclude Include="AudioApi.h" />
+    <ClInclude Include="AudioGenerator.h" />
+    <ClInclude Include="b2Factory.h" />
+    <ClInclude Include="b2MyContact.h" />
+    <ClInclude Include="b2Object.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DXAPI.h" />
+    <ClInclude Include="DXImage.h" />
+    <ClInclude Include="GameCommon.h" />
+    <ClInclude Include="GraphicAdapter.h" />
+    <ClInclude Include="GraphicApi.h" />
+    <ClInclude Include="GraphicGenerator.h" />
+    <ClInclude Include="InputAdapter.h" />
+    <ClInclude Include="InputApi.h" />
+    <ClInclude Include="KeyboardAdapter.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MouseAdapter.h" />
+    <ClInclude Include="MyAudio.h" />
+    <ClInclude Include="MyAudioApi.h" />
+    <ClInclude Include="MyAudioGenerator.h" />
+    <ClInclude Include="MyGraphicGenerator.h" />
+    <ClInclude Include="MyImage.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Package.h" />
+    <ClInclude Include="PackageManager.h" />
+    <ClInclude Include="portaudio.h" />
+    <ClInclude Include="WaveShell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="ApplicationProperty.cpp" />
+    <ClCompile Include="AudioAdapter.cpp" />
+    <ClCompile Include="b2Factory.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="DXAPI.cpp" />
+    <ClCompile Include="DXImage.cpp" />
+    <ClCompile Include="GraphicAdapter.cpp" />
+    <ClCompile Include="InputAdapter.cpp" />
+    <ClCompile Include="InputApi.cpp" />
+    <ClCompile Include="KeyboardAdapter.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MouseAdapter.cpp" />
+    <ClCompile Include="MyAudio.cpp" />
+    <ClCompile Include="MyAudioApi.cpp" />
+    <ClCompile Include="MyAudioGenerator.cpp" />
+    <ClCompile Include="MyGraphicGenerator.cpp" />
+    <ClCompile Include="PackageManager.cpp" />
+    <ClCompile Include="WaveShell.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
